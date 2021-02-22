@@ -4,13 +4,9 @@ const app = express();
 const port = 5000;
 const url = 'https://pokeapi.co/api/v2/pokemon/';
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World!');
-// });
-
-// app.get('/newEndpoint', (req, res) => {
-//   res.send('This is my new endpoint');
-// });
+app.get('/', (req, res) => {
+  res.send('testing');
+});
 
 const randomNumber = () => {
   return Math.floor(Math.random() * (700 - 1 + 1)) + 1;
@@ -28,7 +24,6 @@ app.get("/getPokemon", (req, res) => {
     }
   );
 });
-
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`)
