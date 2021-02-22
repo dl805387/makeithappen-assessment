@@ -16,7 +16,7 @@ function App() {
         <button className="button is-primary is-outlined" type="submit">Click to display random Pokemons!</button>
       </form> 
 
-      <div class="columns">
+      <div className="columns">
         <div className="column">
           <Search />  
         </div> 

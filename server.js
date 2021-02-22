@@ -8,10 +8,12 @@ app.get('/', (req, res) => {
   res.send('testing');
 });
 
+// generates random number
 const randomNumber = () => {
   return Math.floor(Math.random() * (700 - 1 + 1)) + 1;
 }
 
+// fetches api
 app.get("/getPokemon", (req, res) => {
   request(
     url + randomNumber(),
