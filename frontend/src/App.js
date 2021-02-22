@@ -7,7 +7,20 @@ function App() {
 
   return (
     <div className="App">
-      <Search />
+      <div class="columns">
+        <div className="column">
+          <Search />  
+        </div> 
+        <div className="column">
+          <Search />  
+        </div> 
+        <div className="column">
+          <Search />  
+        </div> 
+        <div className="column">
+          <Search />  
+        </div>  
+      </div>
     </div>
   );
 }
